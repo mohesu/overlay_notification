@@ -87,7 +87,7 @@ class _NavigationTiles extends StatelessWidget {
               title: const Text('Multi Screen'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => PageMultiOverlaySupport()));
+                    builder: (context) => const PageMultiOverlaySupport()));
               },
             ),
             const Divider(height: 0, indent: 16),

@@ -1,20 +1,63 @@
-# overlay_notification_example
+# overlay_notification
 
-example for overlay_notification
+[![Pub](https://img.shields.io/pub/v/overlay_notification?color=blue&style=plastic)](https://pub.dev/packages/overlay_notification)
+[![CI](https://github.com/mohesu/overlay_notification/workflows/CI/badge.svg?style=plastic)](https://github.com/mohesu/overlay_notification/actions)
+[![codecov](https://codecov.io/gh/mohesu/overlay_notification/branch/master/graph/badge.svg?style=plastic)](https://codecov.io/gh/mohesu/overlay_notification)
 
-## Simple Usage
+Provider support for `overlay`, make it easy to build **toast** and **In-App notification**.
 
-popup a notification or toast:
+**this library support ALL platform**
+
+## Interaction
+
+If you want to see the ui effect of this library, just click
+here [https://mohesu.github.io/overlay_notification/#/](https://mohesu.github.io/overlay_notification/#/)
+
+## How To Use
+
+#### Add dependencies into you project `pubspec.yaml` file
+
+```yaml
+    dependencies:
+        overlay_notification: latest_version
+```
+the latest version is [![Pub](https://img.shields.io/pub/v/overlay_notification?color=blue&style=plastic)](https://pub.dev/packages/overlay_notification)
+
+#### Wrap your AppWidget with `OverlayNotification`
+
+```dart #build()
+  return OverlayNotification.global(child: MaterialApp());
+```
+
+#### Show toast or simple notifications
 
 ```dart
-showSimpleNotification(Text("this is a message from simple notification"),
-                      background: Colors.green);
+showSimpleNotification(
+     Text("this is a message from simple notification"),
+     background: Colors.green,
+);
 
 toast('this is a message from toast');
 
 ```
 
-## popup a custom notification
+#### Notification with decoration
+
+```dart
+showSimpleNotification(
+  const Text('this is a message from simple notification with decoration'),
+    margin: const EdgeInsets.all(38),
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(18),
+      gradient: const LinearGradient(
+      colors: [Colors.green, Colors.blue],
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight),
+     ),
+    elevation: 0);
+```
+
+#### Popup a custom notification
 
 you can custom your notification widget to popup, for example:
 
@@ -60,7 +103,7 @@ class MessageNotification extends StatelessWidget {
 }
 ```
 
-## popup a custom overlay
+#### Popup a custom overlay
 
 for example, we need create a iOS Style Toast.
 
@@ -114,9 +157,12 @@ class IosStyleToast extends StatelessWidget {
 
 ## End
 
-if you have some suggestion or advice, please open an issue to let me known. 
+if you have some suggestion or advice, please open an issue to let me known.
 This will greatly help the improvement of the usability of this project.
 Thanks.
 
 ## Thanks to
 
+`overlay_support` https://pub.dev/packages/overlay_support
+
+This package is inspired by `overlay_support`, but it is not compatible with `overlay_support` and `overlay_support` is not compatible with `overlay_notification`.

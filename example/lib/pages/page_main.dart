@@ -19,8 +19,7 @@ class HomePage extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               showSimpleNotification(
-                const Text('this is a message from simple notification'),
-                // background: Colors.green,
+                const Text('this is a message from simple notification with decoration'),
                 margin: const EdgeInsets.all(38),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18),
@@ -29,7 +28,6 @@ class HomePage extends StatelessWidget {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),
-                  color: Colors.red,
                 ),
                 elevation: 0,
               );

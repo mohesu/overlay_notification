@@ -121,7 +121,7 @@ OverlayNotificationEntry showSimpleNotification(
         direction: dismissDirection,
         key: ValueKey(key),
         child: Material(
-          color: background ?? Colors.transparent,
+          color: background ?? Theme.of(context).colorScheme.secondary,
           elevation: elevation,
           borderRadius: borderRadius,
           shape: shape,
