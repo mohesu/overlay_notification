@@ -2,7 +2,6 @@
 
 [![Pub](https://img.shields.io/pub/v/overlay_notification?color=blue&style=plastic)](https://pub.dev/packages/overlay_notification)
 [![CI](https://github.com/mohesu/overlay_notification/workflows/CI/badge.svg?style=plastic)](https://github.com/mohesu/overlay_notification/actions)
-[![codecov](https://codecov.io/gh/mohesu/overlay_notification/branch/master/graph/badge.svg?style=plastic)](https://codecov.io/gh/mohesu/overlay_notification)
 
 Provider support for `overlay`, make it easy to build **toast** and **In-App notification**.
 
