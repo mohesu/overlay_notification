@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'dart:math';
 
+import 'package:example/notification/custom_animation.dart';
+import 'package:example/notification/custom_notification.dart';
+import 'package:example/notification/ios_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:overlay_notification/overlay_notification.dart';
 
-import '../notification/custom_animation.dart';
-import '../notification/custom_notification.dart';
-import '../notification/ios_toast.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -149,7 +149,7 @@ class HomePage extends StatelessWidget {
                           onReply: () {
                             OverlayNotificationEntry.of(context)!.dismiss();
                           },
-                          key: ModalKey(const Object()),
+                          key: const ModalKey(Object()),
                         ),
                       ],
                     ),

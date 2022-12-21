@@ -1,10 +1,10 @@
+import 'package:example/pages/page_main.dart';
+import 'package:example/pages/page_multi_overlay_notification.dart';
+import 'package:example/pages/page_with_ime.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:overlay_notification/overlay_notification.dart';
 
-import 'pages/page_main.dart';
-import 'pages/page_multi_overlay_notification.dart';
-import 'pages/page_with_ime.dart';
 
 void main() {
   debugDefaultTargetPlatformOverride = TargetPlatform.android;
@@ -99,7 +99,7 @@ class _NavigationTiles extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => PageWithIme(),
+                    builder: (context) => const PageWithIme(),
                   ),
                 );
               },
