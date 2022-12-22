@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:overlay_notification/overlay_notification.dart';
 
 class PageMultiOverlaySupport extends StatelessWidget {
-
-const PageMultiOverlaySupport({Key? key}) : super(key: key);
+  const PageMultiOverlaySupport({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

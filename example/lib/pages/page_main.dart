@@ -7,7 +7,6 @@ import 'package:example/notification/ios_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:overlay_notification/overlay_notification.dart';
 
-
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -19,7 +18,8 @@ class HomePage extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               showSimpleNotification(
-                const Text('this is a message from simple notification with decoration'),
+                const Text(
+                    'this is a message from simple notification with decoration'),
                 margin: const EdgeInsets.all(38),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18),
