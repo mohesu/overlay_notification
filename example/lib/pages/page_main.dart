@@ -30,6 +30,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 elevation: 0,
+                background: Colors.transparent,
               );
             },
             child: const Text(

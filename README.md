@@ -53,7 +53,9 @@ showSimpleNotification(
       begin: Alignment.topLeft,
       end: Alignment.bottomRight),
      ),
-    elevation: 0);
+    elevation: 0,
+    background: Colors.transparent,
+);
 ```
 
 #### Popup a custom notification
