@@ -1,6 +1,6 @@
 name: overlay_notification
 description: A flutter plugin to show notification on top of the screen. This provide support for overlay, easy to build toast and internal notification.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/mohesu/overlay_notification
 issue_tracker: https://github.com/mohesu/overlay_notification/issues
 

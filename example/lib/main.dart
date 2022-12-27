@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return OverlayNotification.global(
       child: MaterialApp(
-        title: 'Overlay Support Example',
+        title: 'Overlay Notification Example',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
@@ -45,7 +45,7 @@ class _ExampleDrawerState extends State<_ExampleDrawer> {
         child: _NavigationTiles(),
       ),
       appBar: AppBar(
-        title: const Text('Overlay Support Example'),
+        title: const Text('Overlay Notification Example'),
         leading: IconButton(
             icon: AnimatedIcon(
                 icon: AnimatedIcons.menu_arrow,
